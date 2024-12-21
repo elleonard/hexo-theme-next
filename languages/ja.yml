@@ -1,16 +1,16 @@
 ---
 name: 日本語
 title:
-  archive: アーカイブ
+  archive: Archive
   category: カテゴリ
   tag: タグ
   schedule: スケジュール
 menu:
-  home: ホーム
-  archives: アーカイブ
+  home: Home
+  archives: Archive
   categories: カテゴリ
   tags: タグ
-  about: プロフィール
+  about: About
   search: 検索
   schedule: スケジュール
   sitemap: サイトマップ

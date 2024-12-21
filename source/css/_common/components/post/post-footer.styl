@@ -4,7 +4,9 @@
 // To do: use `gap` instead of `margin`
 // See https://caniuse.com/flexbox-gap
 .post-footer {
-  flex-column();
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .post-eof {
@@ -40,7 +42,7 @@ if (hexo-config('creative_commons.post')) {
 
 .post-tags {
   margin-top: 40px;
-  text-align: $scheme-text-align;
+  text-align: right;
 
   a {
     display: inline-block;

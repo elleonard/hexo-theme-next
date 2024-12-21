@@ -6,3 +6,11 @@
     {%- endfor %}
   </div>
 {%- endif %}
+
+{%- if theme.twitter %}
+  <div class="clearfix">
+    <div class="alignright">
+      <a href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw" data-text="{{ post.title }} | {{ config.title }}" data-url="{{ config.url }}/{{ post.path }}" data-via="elleonard_f" class="twitter-hashtag-button" data-show-count="false">Post</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </div>
+{%- endif %}
