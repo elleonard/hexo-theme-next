@@ -55,11 +55,9 @@ if (hexo-config('local_search.enable') or hexo-config('algolia_search.enable')) 
     }
 
     .search-header {
-      background: $gainsboro;
-      if (hexo-config('darkmode')) {
-        @media (prefers-color-scheme: dark) {
-          background: $grey-dim;
-        }
+      background: $grey-dim;
+      @media (prefers-color-scheme: light) {
+        background: $gainsboro;
       }
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
@@ -68,6 +66,7 @@ if (hexo-config('local_search.enable') or hexo-config('algolia_search.enable')) 
     }
 
     input.search-input {
+      color: rgba(0, 0, 0, 1);
       background: transparent;
       border: 0;
       outline: 0;

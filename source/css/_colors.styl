@@ -1,3 +1,5 @@
+
+@media (prefers-color-scheme: light) {
 :root {
   --body-bg-color: $body-bg-color;
   --content-bg-color: $content-bg-color;
@@ -29,9 +31,9 @@
 
   color-scheme: light;
 }
+}
 
 if (hexo-config('darkmode')) {
-  @media (prefers-color-scheme: dark) {
     :root {
       --body-bg-color: $body-bg-color-dark;
       --content-bg-color: $content-bg-color-dark;
@@ -76,4 +78,3 @@ if (hexo-config('darkmode')) {
       color-scheme: light;
     }
   }
-}

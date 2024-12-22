@@ -63,43 +63,38 @@ if (hexo-config('note.style') != 'disabled') {
     for $type in $note-types {
       &.{$type} {
         if ($note-style == 'flat') {
-          background: $note-bg[$type];
-          if (hexo-config('darkmode')) {
-            @media (prefers-color-scheme: dark) {
-              background: mix($note-bg[$type], $body-bg-color-dark, 10%);
-            }
+          background: mix($note-bg[$type], $body-bg-color-dark, 10%);
+          @media (prefers-color-scheme: light) {
+            background: $note-bg[$type];
           }
         }
 
         if ($note-style == 'modern') {
-          background: $note-modern-bg[$type];
-          border-color: $note-modern-border[$type];
-          color: $note-modern-text[$type];
+          background: $note-modern-bg-dark[$type];
+          border-color: $note-modern-border-dark[$type];
+          color: $note-modern-text-dark[$type];
 
           a:not(.btn) {
-            border-bottom-color: $note-modern-text[$type];
-            color: $note-modern-text[$type];
+            border-bottom-color: $note-modern-text-dark[$type];
+            color: $note-modern-text-dark[$type];
 
             &:hover {
-              border-bottom-color: $note-modern-hover[$type];
-              color: $note-modern-hover[$type];
+              border-bottom-color: $note-modern-hover-dark[$type];
+              color: $note-modern-hover-dark[$type];
             }
           }
+          @media (prefers-color-scheme: light) {
+            background: $note-modern-bg[$type];
+            border-color: $note-modern-border[$type];
+            color: $note-modern-text[$type];
 
-          if (hexo-config('darkmode')) {
-            @media (prefers-color-scheme: dark) {
-              background: $note-modern-bg-dark[$type];
-              border-color: $note-modern-border-dark[$type];
-              color: $note-modern-text-dark[$type];
+            a:not(.btn) {
+              border-bottom-color: $note-modern-text[$type];
+              color: $note-modern-text[$type];
 
-              a:not(.btn) {
-                border-bottom-color: $note-modern-text-dark[$type];
-                color: $note-modern-text-dark[$type];
-
-                &:hover {
-                  border-bottom-color: $note-modern-hover-dark[$type];
-                  color: $note-modern-hover-dark[$type];
-                }
+              &:hover {
+                border-bottom-color: $note-modern-hover[$type];
+                color: $note-modern-hover[$type];
               }
             }
           }

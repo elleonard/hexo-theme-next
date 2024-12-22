@@ -51,10 +51,10 @@ darkmode: true
 # ---------------------------------------------------------------
 
 favicon:
-  small: /favicon/favicon-16x16.png
-  medium: /favicon/favicon-32x32.png
-  apple_touch_icon: /favicon/apple-touch-icon.png
-  safari_pinned_tab: /favicon/safari-pinned-tab.svg
+  small: ./favicon/favicon-16x16.png
+  medium: ./favicon/favicon-32x32.png
+  apple_touch_icon: ./favicon/apple-touch-icon.png
+  safari_pinned_tab: ./favicon/safari-pinned-tab.svg
   #android_manifest: /manifest.json
 
 # Custom Logo (Warning: Do not support scheme Mist)
@@ -863,7 +863,7 @@ algolia_search:
 # Local Search
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
-  enable: false
+  enable: true
   # Show top n results per article, show all results by setting to -1
   top_n_per_article: 1
   # Unescape html strings to the readable one.
